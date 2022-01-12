@@ -7,9 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+   edad = 25;
+   peso = 60;
+   altura = 170;
+   sexo = 'Masculino';
+
+  constructor() {
+   }
 
   ngOnInit(): void {
+  }
+
+  cambiarAtura(event: any) {
+    this.altura = event.target.value;
+  }
+
+  selectMasculino(){
+    this.sexo = 'Masculino';
+  }
+
+  selectFemenino(){
+    this.sexo = 'Femenino';
+  }
+
+  calcularIMC(){
+    const imc = this.peso / (this.altura / 100) ** 2;
+    console.log(imc);
+    return imc;
   }
 
 }
