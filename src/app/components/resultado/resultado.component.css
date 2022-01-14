@@ -1,0 +1,27 @@
+.fondoitem {
+    background-color: #FF111328;
+    height: 430px;
+    border-radius: 20px;
+    color: white;
+}
+
+.resultado {
+    color: #268874;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.styleNumber {
+    font-size: 80px;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+.interpretacion {
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+}

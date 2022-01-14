@@ -24,7 +24,8 @@
                 <div class="fondoitem">
                     <div class="contenedor">
                         <p>Altura</p>
-                        <div class="styleNumber"> {{altura}}
+                        <div class="styleNumber">
+                            {{altura}}
                             <span class="cm"> cm </span>
                         </div>
                         <input type="range" (input)="cambiarAtura($event)" [value]="altura" min="120" max="220" class="form-range" id="customRange1">
@@ -39,6 +40,7 @@
                         <p>Peso</p>
                         <div class="styleNumber">
                             {{ peso }}
+                            <span class="cm"> k. </span>
                         </div>
                         <div>
                             <i class="fas fa-minus sumaResta" (click)="peso = peso - 1"></i>
@@ -53,6 +55,7 @@
                         <p>Edad</p>
                         <div class="styleNumber">
                             {{ edad }}
+                            <span class="cm"> a. </span>
                         </div>
                         <div>
                             <i class="fas fa-minus sumaResta" (click)="edad = edad - 1"></i>
@@ -64,7 +67,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <button type="button" (click)="calcularIMC()" class=" btn btn-outline-info btn-lg btn-block btn-color ">Calcular</button>
+                <button type="button" (click)="calcularBMI()" class=" btn btn-outline-info btn-lg btn-block btn-color ">Calcular</button>
             </div>
         </div><br>
     </div>
